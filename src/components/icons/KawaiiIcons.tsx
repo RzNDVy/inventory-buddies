@@ -162,6 +162,15 @@ export const FlowerDecor: React.FC<IconProps> = ({ className = '', size = 24 }) 
   </svg>
 );
 
+export const CloudDecor: React.FC<IconProps> = ({ className = '', size = 24 }) => (
+  <svg width={size} height={size} viewBox="0 0 32 32" fill="none" className={className}>
+    <ellipse cx="16" cy="18" rx="10" ry="6" fill="#E3F1FB"/>
+    <circle cx="10" cy="14" r="6" fill="#C1E4F3"/>
+    <circle cx="22" cy="14" r="5" fill="#C1E4F3"/>
+    <circle cx="16" cy="12" r="7" fill="#E3F1FB"/>
+  </svg>
+);
+
 // Category icon mapper
 export const getCategoryIcon = (category: string, size = 32): React.ReactNode => {
   switch (category) {
